@@ -1,6 +1,6 @@
-## descriptions of its request, response and API url
+## Description of its request, response and API url
 
-# View Create Message
+### View Create Message
 
 HTTP method: POST
 
@@ -81,7 +81,7 @@ The response content for messages with a character length longer than 160:
 ```
 
 
-# View Show Message
+### View Show Message
 
 HTTP method: GET
 
@@ -120,7 +120,7 @@ Content type: application/json
 }
 ```
 
-# View Update Message
+### View Update Message
 
 HTTP method: PATCH
 
@@ -166,7 +166,7 @@ Content type: application/json
 }
 ```
 
-# View Delete Message
+### View Delete Message
 
 HTTP method: DELETE
 
@@ -206,7 +206,7 @@ Content type: application/json
 }
 ```
 
-# Check the urls in the terminal using the following commands
+### Check the urls in the terminal using the following commands
 
 ```console
 curl --request POST -u user:access --data '{"content": "hello"}' https://daftcodenotify.herokuapp.com/message
