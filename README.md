@@ -1,10 +1,10 @@
-## API, descriptions of its request, response and url
+## descriptions of its request, response and API url
 
 # View Create Message
 
 HTTP method: POST
 
-Url: /message
+Url: https://daftcodenotify.herokuapp.com/message
 
 Authorizations: required HTTPBasic
 
@@ -80,11 +80,12 @@ The response content for messages with a character length longer than 160:
 }
 ```
 
+
 # View Show Message
 
 HTTP method: GET
 
-Url: /message/{message_id}
+Url: https://daftcodenotify.herokuapp.com/message/{message_id}
 
 Authorizations: not required
 
@@ -123,7 +124,7 @@ Content type: application/json
 
 HTTP method: PATCH
 
-Url: /message/{message_id}
+Url: https://daftcodenotify.herokuapp.com/message/{message_id}
 
 Authorizations: required HTTPBasic
 
@@ -169,7 +170,7 @@ Content type: application/json
 
 HTTP method: DELETE
 
-Url: /message/{message_id}
+Url: https://daftcodenotify.herokuapp.com/message/{message_id}
 
 Authorizations: required HTTPBasic
 
@@ -203,4 +204,22 @@ Content type: application/json
 {
   "detail": "Message not found"
 }
+```
+
+# Check the urls in the terminal using the following commands
+
+```console
+curl --request POST -u user:access --data '{"content": "hello"}' https://daftcodenotify.herokuapp.com/message
+```
+
+```console
+curl --request GET https://daftcodenotify.herokuapp.com/message/1
+```
+
+```console
+curl --request PATCH -u user:access --data '{"content": "hello again"}' https://daftcodenotify.herokuapp.com/message/1
+```
+
+```console
+curl --request DELETE -u user:access https://daftcodenotify.herokuapp.com/message/1
 ```
