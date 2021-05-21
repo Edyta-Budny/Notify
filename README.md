@@ -1,4 +1,4 @@
-## Description of its request, response and API url
+## API request, response and urls description
 
 ### View Create Message
 
@@ -14,7 +14,7 @@ Request body schema example: application/json:
 
 ```console
 {
-    "content": "hello world"
+    "content": "hello"
 }
 ```
 
@@ -30,7 +30,7 @@ Response body:
 
 ```console
 {
-    "msg": "You have created a message string"
+    "msg": "You have created a message hello"
 }
 ```
 
